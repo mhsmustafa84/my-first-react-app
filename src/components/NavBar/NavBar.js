@@ -25,7 +25,7 @@ export default function NavBar(props) {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto">
                             <li className="nav-item mx-2">
-                                <NavLink exact to="/" className="nav-link">
+                                <NavLink exact to="/my-first-react-app/" className="nav-link">
                                     Home
                                 </NavLink>
                             </li>
