@@ -61,14 +61,19 @@ export default function Form(props) {
     }
 
     const submit = () => {
-        props.login(form);
-        history.push('/my-first-react-app/');
+        if (formErros.EmailErr || formErros.PasswordErr) {
+            alert("You can't enable the button from the ispect mode")
+        } else {
+            props.login(form);
+            history.push('/my-first-react-app');
+        }
     }
 
     return (
 
         <>
             <h1>Login</h1>
+            <p>Write any Email and Password to login</p>
             <div className="w-25 mx-auto mt-5">
                 <input placeholder="Email" value={form.Email} name="Email" className="form-control my-3" onChange={formHandler} autoComplete="disabled" />
                 <span className="text-danger">{formErros.EmailErr}</span>

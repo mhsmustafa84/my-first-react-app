@@ -1,10 +1,6 @@
 import React from 'react'
 import { useSelector, useDispatch } from "react-redux";
-import { Link, Route } from 'react-router-dom';
 import { count } from './../../Store/actions';
-import { Switch } from 'react-router-dom';
-import Test from '../test/Test';
-import Test2 from './../test2/Test2';
 
 export default function Counter() {
 
@@ -31,16 +27,6 @@ export default function Counter() {
                     <button className="btn btn-success ml-2" onClick={plus}>+</button>
                 </div>
             </div>
-            <Link className="m-3" to="/counter/test">first</Link>
-            <Link to="/counter/test2">second</Link>
-            <Switch>
-                <Route path="/counter/test" exact>
-                    <Test />
-                </Route>
-                <Route path="/counter/test2" exact>
-                    <Test2 />
-                </Route>
-            </Switch>
         </>
     )
 }
