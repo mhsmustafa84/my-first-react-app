@@ -60,7 +60,7 @@ export default class App extends Component {
                     <BrowserRouter>
                         <NavBar isLogin={this.state.isLogin} login={this.login} user={this.state.Email} />
                         <Switch>
-                            <Route path="/" exact component={Home} />
+                            <Route path="/my-first-react-app/" exact component={Home} />
                             {
                                 !this.state.isLogin &&
                                 <Route path="/login" exact>
@@ -70,20 +70,20 @@ export default class App extends Component {
                             {
                                 this.state.isLogin &&
                                 <Switch>
-                                    <Route path="/list" exact component={List} />
-                                    <Route path="/products" exact component={Products} />
-                                    <Route path="/redux-thunk-products" exact component={RTProducts} />
-                                    <Route path="/products/:id" exact component={Product} />
-                                    <Route path="/books" exact component={Books} />
-                                    <Route path="/counter" exact component={Counter} />
-                                    <Route path="/counter/test" exact>
+                                    <Route path="/my-first-react-app/list" exact component={List} />
+                                    <Route path="/my-first-react-app/products" exact component={Products} />
+                                    <Route path="/my-first-react-app/redux-thunk-products" exact component={RTProducts} />
+                                    <Route path="/my-first-react-app/products/:id" exact component={Product} />
+                                    <Route path="/my-first-react-app/books" exact component={Books} />
+                                    <Route path="/my-first-react-app/counter" exact component={Counter} />
+                                    <Route path="/my-first-react-app/counter/test" exact>
                                         <Counter />
                                     </Route>
-                                    <Route path="/counter/test2" exact>
+                                    <Route path="/my-first-react-app/counter/test2" exact>
                                         <Counter />
                                     </Route>
-                                    <Route path="/context-counter" exact component={ContextCounterCom} />
-                                    <Route path="/cart" exact component={Cart} />
+                                    <Route path="/my-first-react-app/context-counter" exact component={ContextCounterCom} />
+                                    <Route path="/my-first-react-app/cart" exact component={Cart} />
                                 </Switch>
                             }
                             <Route path="*" exact component={NotFound} />
