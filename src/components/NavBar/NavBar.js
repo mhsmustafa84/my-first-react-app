@@ -33,37 +33,37 @@ export default function NavBar(props) {
                                 props.isLogin &&
                                 <>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/list" className="nav-link">
+                                        <NavLink to="/my-first-react-app/list" className="nav-link">
                                             To-Do-List
                                         </NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/products" className="nav-link">
+                                        <NavLink to="/my-first-react-app/products" className="nav-link">
                                             Products
                                         </NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/redux-thunk-products" className="nav-link">
+                                        <NavLink to="/my-first-react-app/redux-thunk-products" className="nav-link">
                                             R-Products
                                         </NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/books" className="nav-link">
+                                        <NavLink to="/my-first-react-app/books" className="nav-link">
                                             Books
                                         </NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/counter" className="nav-link">
+                                        <NavLink to="/my-first-react-app/counter" className="nav-link">
                                             R-Counter ({counter})
                                         </NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/context-counter" className="nav-link">
+                                        <NavLink to="/my-first-react-app/context-counter" className="nav-link">
                                             Context-Counter ({contextCounter})
                                         </NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/cart" className="nav-link">
+                                        <NavLink to="/my-first-react-app/cart" className="nav-link">
                                             Cart ({cartItems})
                                         </NavLink>
                                     </li>
