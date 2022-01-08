@@ -2,6 +2,8 @@
   "name": "my-first-react-app",
   "author": "Mostafa-abdelhamid",
   "version": "0.1.0",
+  "homepage": "https://mhsmustafa84.github.io/my-first-react-app",
+  "main": "./src/index.js",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
