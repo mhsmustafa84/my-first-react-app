@@ -1,0 +1,5 @@
+.line {
+  text-decoration: line-through;
+  text-decoration-color: #e0a800;
+  text-decoration-thickness: 3px;
+}
