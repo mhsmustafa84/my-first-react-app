@@ -62,7 +62,7 @@ export default function Form(props) {
 
     const submit = () => {
         props.login(form);
-        history.push('/');
+        history.push('/my-first-react-app/');
     }
 
     return (

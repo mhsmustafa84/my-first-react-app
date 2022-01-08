@@ -71,19 +71,17 @@ export default function NavBar(props) {
                             }
                         </ul>
                         {
-                            props.isLogin &&
-                            <>
-                                <div className="float-right text-warning mr-4"><small className="text-success">Welcome</small> {props.user.split('@')[0]}</div>
-                                <Link to="/" onClick={logOut} className="text-danger">
-                                    Log Out
+                            props.isLogin ?
+                                <>
+                                    <div className="float-right text-warning mr-4"><small className="text-success">Welcome</small> {props.user.split('@')[0]}</div>
+                                    <Link to="/my-first-react-app/" onClick={logOut} className="text-danger">
+                                        Log Out
+                                    </Link>
+                                </>
+                                :
+                                <Link to="/my-first-react-app/login" className="text-white">
+                                    Login
                                 </Link>
-                            </>
-                        }
-                        {
-                            !props.isLogin &&
-                            <Link to="/login" className="text-white">
-                                Login
-                            </Link>
                         }
                     </div>
                 </div>
